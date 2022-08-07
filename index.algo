@@ -1,0 +1,47 @@
+ALGORITHM algorithm_name
+VAR
+    Sentence:String
+    count:Integer:0
+    words:Integer:=1
+    voy:Integer:=0
+    i:Integer:=0;
+BEGIN
+read(sentence)
+ for i from 0 to sentence.lenght Step1 do
+ if(sentence[i]<>" ")
+ count+=1
+ 
+ if(sentence[i]="A" or "E"or "I" or "O" or "U"or "Y","a" or "e"or "o" or "i" or "u"or "y")
+ voy+=1
+ 
+ if(sentence[i]=" ")
+ words+=1
+
+ end for 
+ write("the numbers is";words)
+  write("the numbers is";voy)
+   write("the numbers is";count)
+ENDs
+
+
+ALGORITHM algorithm_name
+VAR
+  set1 : ARRAY_OF INTEGER
+   set2 : ARRAY_OF INTEGER
+ i:Integer:=0;
+ j:integer:=0;
+ sum:=integer:=0;
+BEGIN
+ for i from 0 to set1.lenght Step1 do
+  for j from 0 to set2.lenght Step1 do
+if set1[i]=set2[j]
+then sum=sum+set1[i]
+if set2[j]=set1[i]
+then sum=sum+set2[j]
+END_FOR
+END_FOR
+write("the numbers is";sum)
+
+
+R
+END
